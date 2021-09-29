@@ -1,0 +1,93 @@
+
+h1{
+    text-align: center;
+    color: mintcream;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-size: cover;
+    background-image: url("includes/rain.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box{
+    background: rgba(0,0,0,0.4);
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-style: solid;
+    border-color: #2ecc71;
+    border-radius: 40px;
+}
+
+.box h1{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.box h4 {
+    color: #2ecc71;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.box input[type = "text"],.box input[type = "password"]{
+    text-align: center;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid whitesmoke;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: whitesmoke;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 260px;
+    border-color: #2ecc71;
+}
+
+::-webkit-input-placeholder{
+    color: whitesmoke;
+    transition:opacity 0.3s ease-in-out;
+}
+
+:focus::-webkit-input-placeholder{
+    opacity: 0.5;
+}
+
+.box input[type = "submit"]{
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.30s;
+    cursor: pointer;
+}
+
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+
+.box a {
+    color: white;
+    text-transform: none;
+    text-underline-color: white;
+}

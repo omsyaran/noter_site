@@ -1,0 +1,131 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-size: cover;
+    background-image: url("includes/rain.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h3{
+    font-weight: bold;
+    padding-left: 42%;
+    padding-top: 26px;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    font-size: 2.0rem;
+    margin-right:110px ;
+}
+
+.box1, .box2, .box3{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width:280px;
+    height:380px;
+    background: black;
+    box-sizing:border-box;
+    padding:20px;
+    transition: 0.5s;
+    overflow:hidden;
+}
+
+.box1{
+    top:50%;
+    left:28%;
+}
+
+.box2{
+    top:50%;
+    left:54%;
+}
+
+.box3{
+    top:50%;
+    left:80%;
+}
+
+.box1 h5, .box2 h5 ,.box3 h5, .box1 p, .box2 p ,.box3 p{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    transition-delay:0.5s;
+    color: whitesmoke;
+    transform:scale(0.8);
+}
+
+.box1 h5, .box2 h5 ,.box3 h5{
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.box1 p, .box2 p ,.box3 p{
+    font-size: 14px;
+    text-align: justify;
+    opacity: 0.5;
+}
+
+.box1:before, .box2:before, .box3:before, .box1:after, .box2:after, .box3:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity:0;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.box1:before, .box2:before, .box3:before{
+    top:0;
+    left:0;
+    border-top:2px solid #2ecc71 ;
+    border-left:2px solid #2ecc71 ;
+}
+
+.box1:after, .box2:after, .box3:after{
+    bottom:0;
+    right:0;
+    border-bottom:2px solid #2ecc71 ;
+    border-right:2px solid #2ecc71 ;
+}
+
+.box1:hover:before, .box2:hover:before, .box3:hover:before{
+    width:100%;
+    height:100% ;
+    opacity: 1;
+}
+
+.box1:hover:after, .box2:hover:after, .box3:hover:after{
+    width:100%;
+    height:100% ;
+    opacity: 1;
+}
+
+.box1:hover p, .box2:hover p, .box3:hover p, .box1:hover h5, .box2:hover h5, .box3:hover h5{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.box1:hover, .box2:hover, .box3:hover{
+    box-shadow: 0 25px 30px rgba(0,0,0,5);
+}
+
+.box1 span, .box2 span, .box3 span{
+    position: absolute;
+    top:0;
+    left:-120%;
+    width:100%;
+    height:100%;
+    background: #2fd072 ;
+    transition: 0.5s;
+    transition-delay:0.5s;
+    transform: skewX(25deg);
+}
+
+.box1:hover span, .box2:hover span, .box3:hover span{
+    left:120%;
+}

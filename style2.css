@@ -1,0 +1,186 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-size: cover;
+    background-image: url("includes/rain.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h3{
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-right:110px ;
+}
+
+#user_notes{
+    background: rgba(0, 0, 0, 0.4) center;
+    margin-left: 100px;
+    margin-right: 170px;
+    padding: 30px 30px 30px 30px;
+    font-family:Arial, sans-serif, Verdana;
+    font-size: 1.0em;
+    line-height: 1.1;
+    border-style: solid;
+    border-color: #2ecc71;
+    color: whitesmoke;
+}
+
+#user_notes::-webkit-scrollbar{
+    width:0.30rem;
+}
+
+#user_notes::-webkit-scrollbar-track{
+    background: #2ecc71;
+}
+
+#user_notes::-webkit-scrollbar-thumb{
+    background:whitesmoke;
+}
+
+input[type = "button"] {
+    background: black;
+    display: block;
+    margin-top: 30px;
+    margin-left: 680px;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.30s;
+    cursor: pointer
+}
+
+input[type = "button"]:hover{
+    background: #2ecc71;
+}
+
+.popup input[type = "text"]{
+    text-align: center;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid whitesmoke;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: whitesmoke;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+input[type = "text"]:focus{
+    width: 260px;
+    border-color: #2ecc71;
+}
+
+::-webkit-input-placeholder{
+    color: whitesmoke;
+    transition:opacity 0.3s ease-in-out;
+}
+
+:focus::-webkit-input-placeholder{
+    opacity: 0.5;
+}
+
+.pops .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height:100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    display: none;
+}
+
+.pops .content{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: rgba(0,0,0,0.9);
+    width: 300px;
+    padding: 40px;
+    text-align: center;
+    border-style: solid;
+    border-color: #2ecc71;
+    border-radius: 40px;
+    z-index:2;
+}
+
+.pops.active .overlay{
+    display: block;
+}
+
+.pops.active .content{
+    transition: all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+}
+
+.pops h4{
+    text-align: center;
+    font-weight: bold;
+    padding-left: 14px;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.pops input[type = "text"]{
+    text-align: center;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid whitesmoke;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: whitesmoke;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.pops input[type = "submit"] {
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.30s;
+    cursor: pointer;
+}
+
+.pops input[type = "text"]:focus{
+    width: 260px;
+    border-color: #2ecc71;
+}
+
+.pops input[type="submit"]:hover{
+    background: #2ecc71;
+}
+
+.pops .x-btn{
+    cursor: pointer;
+    position: absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    color: #2ecc71;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
